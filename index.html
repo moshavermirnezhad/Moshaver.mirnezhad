@@ -1,0 +1,2583 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاوره تحصیلی میرنژاد | راهنمای جامع انتخاب منابع کنکور گروه آموزشی تیک</title>
+    <!-- Vazirmatn Persian Font Import -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        :root {
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-header: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --brand-orange: #ff6b00;
+            --brand-orange-light: #fff3eb;
+            --brand-green: #10b981;
+            --brand-green-light: #ecfdf5;
+            --brand-purple: #8b5cf6;
+            --brand-purple-light: #f3e8ff;
+            --brand-amber: #f59e0b;
+            --card-border: #e2e8f0;
+            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 16px 32px rgba(255, 107, 0, 0.12);
+            --radius-md: 14px;
+            --radius-lg: 22px;
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --bg-body: #0f172a;
+            --bg-card: #1e293b;
+            --bg-header: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --card-border: rgba(255, 255, 255, 0.08);
+            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+            --brand-orange-light: rgba(255, 107, 0, 0.15);
+            --brand-green-light: rgba(16, 185, 129, 0.15);
+            --brand-purple-light: rgba(139, 92, 246, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Vazirmatn, 'Segoe UI', Tahoma, sans-serif;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.85;
+            padding-bottom: 40px;
+            transition: var(--transition);
+        }
+
+        /* Top Bar Header */
+        .top-banner {
+            background: linear-gradient(90deg, #ff6b00 0%, #ff8800 50%, #10b981 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 8px 15px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            box-shadow: 0 2px 10px rgba(255, 107, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .top-banner span.badge {
+            background: rgba(255, 255, 255, 0.25);
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* Progress Bar */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b00, #10b981);
+            width: 0%;
+            z-index: 1000;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation Bar */
+        header.main-nav {
+            position: sticky;
+            top: 0;
+            z-index: 900;
+            background: var(--bg-header);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--card-border);
+            padding: 14px 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            background: linear-gradient(135deg, #ff6b00, #ff9100);
+            color: white;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+        }
+
+        .logo-text h2 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--brand-orange);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .theme-toggle-btn {
+            background: var(--bg-body);
+            border: 2px solid var(--card-border);
+            color: var(--text-main);
+            padding: 8px 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .theme-toggle-btn:hover {
+            border-color: var(--brand-orange);
+            color: var(--brand-orange);
+        }
+
+        /* Hero Header Section */
+        .hero {
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 20px;
+            background: var(--brand-orange-light);
+            color: var(--brand-orange);
+            border-radius: 50px;
+            font-size: 0.92rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 107, 0, 0.25);
+        }
+
+        .hero h1 {
+            font-size: 2.3rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Rules Box */
+        .rules-card {
+            background: var(--bg-card);
+            border: 2px solid var(--card-border);
+            border-radius: var(--radius-lg);
+            padding: 26px;
+            margin: 20px 0 30px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rules-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 8px;
+            height: 100%;
+            background: linear-gradient(180deg, #ff6b00, #10b981);
+        }
+
+        .rules-header {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--brand-orange);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+        }
+
+        .rule-item {
+            background: var(--bg-body);
+            padding: 16px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--card-border);
+        }
+
+        .rule-item h4 {
+            font-size: 0.98rem;
+            font-weight: 800;
+            color: var(--brand-green);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .rule-item p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        /* STEP-1: SUBJECT SELECTION SECTION */
+        .selection-section {
+            background: var(--bg-card);
+            border: 2px solid var(--brand-orange);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(255, 107, 0, 0.08);
+        }
+
+        .step-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px dashed var(--card-border);
+        }
+
+        .step-badge {
+            background: #ff6b00;
+            color: white;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 800;
+        }
+
+        .step-heading {
+            font-size: 1.35rem;
+            font-weight: 900;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Subjects Grid Pills */
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .subject-btn {
+            background: var(--bg-body);
+            border: 2px solid var(--card-border);
+            color: var(--text-main);
+            padding: 12px 10px;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.92rem;
+            text-align: center;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .subject-btn .icon {
+            font-size: 1.4rem;
+        }
+
+        .subject-btn:hover {
+            border-color: var(--brand-orange);
+            transform: translateY(-2px);
+            color: var(--brand-orange);
+        }
+
+        .subject-btn.active {
+            background: linear-gradient(135deg, #ff6b00, #ff8800);
+            color: #ffffff;
+            border-color: #ff6b00;
+            box-shadow: 0 6px 16px rgba(255, 107, 0, 0.3);
+        }
+
+        .search-box {
+            position: relative;
+            margin-top: 15px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 14px 20px;
+            background: var(--bg-body);
+            border: 2px solid var(--card-border);
+            border-radius: 30px;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            border-color: var(--brand-green);
+            box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+        }
+
+        /* Lesson Header */
+        .lesson-header {
+            margin: 40px 0 15px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--brand-green);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .lesson-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--brand-green);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Section Category Divider inside Lesson */
+        .category-divider {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 24px 0 16px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--text-main);
+            padding: 8px 16px;
+            background: var(--bg-card);
+            border-right: 5px solid var(--brand-orange);
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .category-divider.cat-source2 {
+            border-right-color: var(--brand-purple);
+            background: var(--brand-purple-light);
+            color: #6b21a8;
+        }
+
+        [data-theme="dark"] .category-divider.cat-source2 {
+            color: #c084fc;
+        }
+
+        .category-divider.cat-review {
+            border-right-color: var(--brand-green);
+            background: var(--brand-green-light);
+            color: #047857;
+        }
+
+        [data-theme="dark"] .category-divider.cat-review {
+            color: #34d399;
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        /* Book Card Style */
+        .card {
+            background: var(--bg-card);
+            border: 2px solid var(--card-border);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--brand-orange);
+        }
+
+        .card-top {
+            margin-bottom: 12px;
+        }
+
+        .subject-tag {
+            font-size: 0.78rem;
+            font-weight: 800;
+            color: var(--brand-orange);
+            background: var(--brand-orange-light);
+            padding: 4px 10px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .subject-tag.tag-source2 {
+            color: #7c3aed;
+            background: var(--brand-purple-light);
+        }
+
+        .subject-tag.tag-review {
+            color: #059669;
+            background: var(--brand-green-light);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .book-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--text-main);
+            line-height: 1.35;
+        }
+
+        /* Badges */
+        .level-badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.76rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .level-beginner { background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; }
+        .level-intermediate { background: #fffbebfb; color: #d97706; border: 1px solid #fde68a; }
+        .level-advanced { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+
+        .card-desc {
+            font-size: 0.89rem;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            text-align: justify;
+            line-height: 1.75;
+        }
+
+        .card-list {
+            list-style: none;
+            margin-bottom: 12px;
+        }
+
+        .card-list li {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+        }
+
+        .card-footer {
+            padding-top: 12px;
+            border-top: 1px solid var(--card-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rating {
+            font-weight: 900;
+            color: var(--brand-amber);
+            font-size: 0.92rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .usage-badge {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            background: var(--bg-body);
+            padding: 4px 10px;
+            border-radius: 8px;
+        }
+
+        /* Advice Box */
+        .advice-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(255, 107, 0, 0.1));
+            border: 2px dashed var(--brand-green);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin: 40px 0;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .advice-icon {
+            font-size: 2rem;
+            background: #ffffff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-sm);
+            flex-shrink: 0;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--bg-card);
+            border: 2px solid var(--card-border);
+            border-radius: var(--radius-md);
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 16px 20px;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--brand-orange-light);
+            color: var(--brand-orange);
+        }
+
+        .faq-answer {
+            padding: 0 20px 16px;
+            color: var(--text-muted);
+            font-size: 0.93rem;
+            display: none;
+            border-top: 1px solid var(--card-border);
+            padding-top: 12px;
+            line-height: 1.8;
+        }
+
+        /* Footer & CTA */
+        footer.main-footer {
+            margin-top: 60px;
+            background: var(--bg-card);
+            border-top: 2px solid var(--card-border);
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        .eitaa-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #ff6b00 0%, #ff8800 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 1.05rem;
+            box-shadow: 0 8px 24px rgba(255, 107, 0, 0.35);
+            transition: var(--transition);
+            margin: 15px 0 25px;
+        }
+
+        .eitaa-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(255, 107, 0, 0.45);
+        }
+
+        .footer-credits {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: var(--brand-green);
+        }
+
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background: var(--brand-orange);
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            font-size: 1.2rem;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Responsive Improvements for Mobile and Tablet */
+        @media (max-width: 768px) {
+            .top-banner {
+                padding: 6px 10px;
+                font-size: 0.82rem;
+                gap: 6px;
+            }
+            .top-banner span.badge {
+                font-size: 0.78rem;
+                padding: 2px 8px;
+            }
+            header.main-nav {
+                padding: 10px 0;
+            }
+            .logo-icon {
+                width: 38px;
+                height: 38px;
+                font-size: 1.25rem;
+            }
+            .logo-text h2 {
+                font-size: 1.05rem;
+            }
+            .logo-text span {
+                font-size: 0.75rem;
+            }
+            .theme-toggle-btn {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+                border-width: 1.5px;
+            }
+            .hero {
+                padding: 22px 0 12px;
+            }
+            .hero-badge {
+                font-size: 0.8rem;
+                padding: 4px 14px;
+                margin-bottom: 10px;
+            }
+            .hero h1 { 
+                font-size: 1.45rem; 
+                line-height: 1.35;
+                margin-bottom: 8px;
+            }
+            .hero p { 
+                font-size: 0.88rem; 
+                line-height: 1.6;
+            }
+            .rules-card { 
+                padding: 16px; 
+                margin: 16px 0 20px;
+                border-radius: var(--radius-md);
+            }
+            .rules-header {
+                font-size: 1.05rem;
+                margin-bottom: 12px;
+            }
+            .rules-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            .rule-item {
+                padding: 12px;
+            }
+            .rule-item h4 {
+                font-size: 0.9rem;
+            }
+            .rule-item p {
+                font-size: 0.82rem;
+            }
+            .selection-section {
+                padding: 16px;
+                margin-bottom: 25px;
+                border-radius: var(--radius-md);
+            }
+            .step-heading {
+                font-size: 1.15rem;
+            }
+            .subjects-grid { 
+                grid-template-columns: repeat(3, 1fr); 
+                gap: 8px;
+            }
+            .subject-btn {
+                padding: 10px 6px;
+                font-size: 0.8rem;
+                border-radius: 10px;
+            }
+            .subject-btn .icon {
+                font-size: 1.1rem;
+            }
+            .grid-cards { 
+                grid-template-columns: 1fr; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 12px;
+            }
+            .top-banner {
+                font-size: 0.78rem;
+                padding: 6px 8px;
+                justify-content: space-around;
+            }
+            .top-banner span:nth-child(3) {
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-size: 0.75rem;
+                opacity: 0.9;
+            }
+            .logo-text span {
+                display: none;
+            }
+            .theme-toggle-btn #themeText {
+                display: none;
+            }
+            .theme-toggle-btn {
+                padding: 6px 10px;
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.25rem;
+            }
+            .hero-badge {
+                font-size: 0.75rem;
+                padding: 4px 10px;
+            }
+            .subjects-grid { 
+                grid-template-columns: repeat(3, 1fr); 
+                gap: 6px;
+            }
+            .subject-btn {
+                padding: 8px 4px;
+                font-size: 0.75rem;
+            }
+            .search-input {
+                padding: 10px 16px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="progress-bar"></div>
+
+    <!-- Top Notice Header -->
+    <div class="top-banner">
+        <span>🎓 مشاوره تحصیلی میرنژاد</span>
+      
+        <span>| راهنمای تخصصی انتخاب منابع کنکور 1406- 1405</span>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="main-nav">
+        <div class="container nav-wrapper">
+            <div class="logo-box">
+                <div class="logo-icon">🎯</div>
+                <div class="logo-text">
+                    <h2>گروه آموزشی تیک</h2>
+                    <span>تحلیل و سطح‌بندی تخصصی منابع کنکور</span>
+                </div>
+            </div>
+            <button class="theme-toggle-btn" id="themeToggle">
+                <span id="themeIcon">🌙</span>
+                <span id="themeText">تغییر حالت</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-badge">
+                <span>🔥</span> دسته‌بندی تفکیک‌شده: منبع اول، منبع دوم و جمع‌بندی
+            </div>
+            <h1>بهترین کتاب تست کنکور برای سطح شما کدام است؟</h1>
+            <p>راهنمای جامع و بدون تعصب برای انتخاب منبع اول (آموزشی)، منبع دوم (پیشرفته) و کتب آزمون و جمع‌بندی</p>
+        </section>
+
+        <!-- Golden Rules Section -->
+        <section class="rules-card">
+            <div class="rules-header">
+                <span>📌</span> قبل از خرید کتاب، این ۴ اصل را حتماً بدانید:
+            </div>
+            <div class="rules-grid">
+                <div class="rule-item">
+                    <h4><span>🔄</span> ۱. اصل ثبات ۷۰ الی ۸۰ درصدی</h4>
+                    <p>تمام منابع استاندارد بر اساس کتاب درسی هستند. اگر منبعی دارید که با آن روان مطالعه می‌کنید، تعویض آن کاملاً اشتباه است.</p>
+                </div>
+                <div class="rule-item">
+                    <h4><span>📅</span> ۲. سال چاپ کتاب‌ها</h4>
+                    <p>تغییرات کتب کنکور سالانه تنها ۴ تا ۵ درصد است. چاپ‌های ۲ تا ۳ سال اخیر (از ۱۴۰۱ به بعد) کاملاً معتبر بوده و نیازی به خرید جدید نیست.</p>
+                </div>
+                <div class="rule-item">
+                    <h4><span>🔗</span> ۳. منبع جامع در ریاضیات</h4>
+                    <p>در دروس زنجیره‌ای مثل ریاضی، حتماً کتاب جامع تهیه کنید زیرا مباحث پایه تا دوازدهم (مثل تابع و مثلثات) پیوسته هستند.</p>
+                </div>
+                <div class="rule-item">
+                    <h4><span>🎯</span> ۴. معیار انتخاب فردی</h4>
+                    <p>کتاب مناسب، کتابی است که منطبق بر سطح علمی فعلی شما باشد، نه کتابی که دوستان یا رتبه‌های برتر معرفی می‌کنند.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP-1: SUBJECT SELECTION SECTION -->
+        <section class="selection-section">
+            <div class="step-title">
+                <div class="step-heading">
+                    <span>🎯</span> گام اول: انتخاب درس مورد نظر
+                </div>
+                <span class="step-badge">فیلتر هوشمند</span>
+            </div>
+            <!-- Subjects Grid Pills -->
+            <div class="subjects-grid" id="subjectsGrid">
+                <button class="subject-btn active" data-subject="all">
+                    <span class="icon">✨</span>
+                    <span>همه دروس</span>
+                </button>
+                <button class="subject-btn" data-subject="زیست‌شناسی">
+                    <span class="icon">🧬</span>
+                    <span>زیست‌شناسی</span>
+                </button>
+                <button class="subject-btn" data-subject="فیزیک">
+                    <span class="icon">⚛️</span>
+                    <span>فیزیک</span>
+                </button>
+                <button class="subject-btn" data-subject="ریاضی تجربی">
+                    <span class="icon">📐</span>
+                    <span>ریاضی تجربی</span>
+                </button>
+                <button class="subject-btn" data-subject="حسابان (ریاضی)">
+                    <span class="icon">✏️</span>
+                    <span>حسابان (ریاضی)</span>
+                </button>
+                <button class="subject-btn" data-subject="هندسه (ریاضی)">
+                    <span class="icon">📐</span>
+                    <span>هندسه (ریاضی)</span>
+                </button>
+                <button class="subject-btn" data-subject="گسسته و آمار">
+                    <span class="icon">🎲</span>
+                    <span>گسسته و آمار</span>
+                </button>
+                <button class="subject-btn" data-subject="شیمی">
+                    <span class="icon">🧪</span>
+                    <span>شیمی</span>
+                </button>
+                <button class="subject-btn" data-subject="ریاضی انسانی">
+                    <span class="icon">📊</span>
+                    <span>ریاضی انسانی</span>
+                </button>
+                <button class="subject-btn" data-subject="اقتصاد">
+                    <span class="icon">💰</span>
+                    <span>اقتصاد</span>
+                </button>
+                <button class="subject-btn" data-subject="جامعه‌شناسی">
+                    <span class="icon">🏛️</span>
+                    <span>جامعه‌شناسی</span>
+                </button>
+                <button class="subject-btn" data-subject="تاریخ و جغرافیا">
+                    <span class="icon">📜</span>
+                    <span>تاریخ و جغرافیا</span>
+                </button>
+                <button class="subject-btn" data-subject="فلسفه و منطق">
+                    <span class="icon">🧠</span>
+                    <span>فلسفه و منطق</span>
+                </button>
+                <button class="subject-btn" data-subject="روانشناسی">
+                    <span class="icon">🧘‍♂️</span>
+                    <span>روانشناسی</span>
+                </button>
+                <button class="subject-btn" data-subject="علوم و فنون">
+                    <span class="icon">📚</span>
+                    <span>علوم و فنون</span>
+                </button>
+                <button class="subject-btn" data-subject="عربی تخصصی">
+                    <span class="icon">🌙</span>
+                    <span>عربی تخصصی</span>
+                </button>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" class="search-input" placeholder="🔍 یا اسم کتاب یا درس مورد نظرت رو اینجا جستجو کن...">
+            </div>
+        </section>
+
+        <!-- STEP 2: BOOKS DISPLAY AREA -->
+        <div id="booksDisplayArea">
+
+            <!-- ================= BIOLOGY ================= -->
+            <div class="subject-group" data-subject="زیست‌شناسی">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>🧬</span> زیست‌شناسی (تجربی)</h3>
+                </div>
+
+                <!-- CATEGORY 1: PRIMARY SOURCES -->
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تسلط اولیه)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - آموزش پایه</span>
+                            <div class="card-header">
+                                <h4 class="book-title">خیلی سبز (تک‌پایه)</h4>
+                                <span class="level-badge level-beginner">🟢 شروع از صفر / ضعیف</span>
+                            </div>
+                            <p class="card-desc">بهترین منبع برای شروع مطالعه از صفر. ارائه درسنامه‌های بسیار مفصل، خط به خط، همراه با پوشش کامل نکات کتاب درسی و تست‌های آموزشی روان.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> درسنامه‌های بسیار روان و کامل</li>
+                                <li><span>✅</span> آموزش مفاهیم و قیدهای اصلی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.5 / 10</span>
+                            <span class="usage-badge">منبع اول (پایه)</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - تست‌محور</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع نشر الگو (نسل جدید)</h4>
+                                <span class="level-badge level-intermediate">🟡 متوسط به بالا</span>
+                            </div>
+                            <p class="card-desc">کتابی با رویکرد آموزش تست‌محور، تست‌های چالشی و ایده‌دار. دارای QR code برای تحلیل ویدئویی و پاسخنامه‌های تحلیلی غنی.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> تست‌های استاندارد و سطح بالا</li>
+                                <li><span>✅</span> تحلیل‌های دقیق و ویدئویی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.3 / 10</span>
+                            <span class="usage-badge">منبع اول (قوی)</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - بینابین</span>
+                            <div class="card-header">
+                                <h4 class="book-title">میکرو نقره‌ای گاج (چاپ قدیم)</h4>
+                                <span class="level-badge level-intermediate">🟡 متوسط</span>
+                            </div>
+                            <p class="card-desc">سطحی بالاتر از خیلی سبز و پایین‌تر از نشر الگو دارد. مناسب برای دانش‌آموزانی که سطح متوسطی دارند و بانک تست استاندارد می‌خواهند.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> تست‌های کنکوری طبقه‌بندی شده</li>
+                                <li><span>✅</span> پاسخنامه تشریحی مناسب</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 8.9 / 10</span>
+                            <span class="usage-badge">منبع اول (استاندارد)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 2: ADVANCED SOURCES -->
+                <div class="category-divider cat-source2">
+                    <span>🔸 منبع دوم (سطح پیشرفته و بانک تست سنگین)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم - بهترین گزینه</span>
+                            <div class="card-header">
+                                <h4 class="book-title">آی‌کیو (IQ) جامع گاج</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته (سطح ۲)</span>
+                            </div>
+                            <p class="card-desc">بهترین و قوی‌ترین منبع دوم زیست‌شناسی برای داوطلبانی که مفاهیم اولیه را مسلط شده‌اند و به دنبال سوالات سنگین و ترکیبی کنکور هستند.</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> ایده‌های بسیار نو در تست‌ها</li>
+                                <li><span>🔥</span> سطح چالش بسیار بالا</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.8 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول منبع دوم</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم - تستی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">پینوکیو خیلی سبز (۲ جلدی)</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته</span>
+                            </div>
+                            <p class="card-desc">کتاب دو جلدی شامل تست و پاسخنامه تشریحی. منبع دوم عالی برای حل تست بیشتر و آشنایی با ایده‌های سوالات کنکوری اخیر.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> بانک تست جامع و فوق‌العاده</li>
+                                <li><span>✅</span> پاسخنامه تشریحی تحلیلی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.4 / 10</span>
+                            <span class="usage-badge">منبع دوم تستی</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم - چالشی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">نردبام خیلی سبز</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته</span>
+                            </div>
+                            <p class="card-desc">دارای تست‌های سطح بالا جهت تثبیت مطالب برای دانش‌آموزانی که درصد بالای ۷۰ می‌خواهند.</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> تست‌های سخت و ایده‌دار</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.2 / 10</span>
+                            <span class="usage-badge">منبع دوم</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 3: REVIEW & EXAM -->
+                <div class="category-divider cat-review">
+                    <span>🚀 منبع جمع‌بندی، آزمون و مبحثی</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">جمع‌بندی و آزمون</span>
+                            <div class="card-header">
+                                <h4 class="book-title">موج آزمون زیست (نشر الگو)</h4>
+                                <span class="level-badge level-advanced">🔴 جمع‌بندی و آزمون</span>
+                            </div>
+                            <p class="card-desc">بهترین کتاب آزمونی زیست‌شناسی برای ایام جمع‌بندی، شامل آزمون‌های فصل به فصل و جامع شبیه‌ساز کنکور.</p>
+                            <ul class="card-list">
+                                <li><span>🚀</span> شبیه‌ساز واقعی کنکور</li>
+                                <li><span>🚀</span> آزمون‌های زمان‌دار عالی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.8 / 10</span>
+                            <span class="usage-badge">جمع‌بندی اصلی</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">مبحثی و قیدنامه</span>
+                            <div class="card-header">
+                                <h4 class="book-title">عبارت‌های درست‌نادرست خیلی سبز</h4>
+                                <span class="level-badge level-beginner">🟢 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">کتابی بسیار کاربردی جهت تسلط بر قیدهای زیست‌شناسی و جملات صحیح و غلط کنکوری برای جلوگیری از دام‌های تستی.</p>
+                            <ul class="card-list">
+                                <li><span>🎯</span> تمرکز بر قیدها و نکات ریز</li>
+                                <li><span>🎯</span> تثبیت سریع مطالب حفظی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.1 / 10</span>
+                            <span class="usage-badge">مکمل قیدها</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= PHYSICS ================= -->
+            <div class="subject-group" data-subject="فیزیک">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>⚛️</span> فیزیک (تجربی و ریاضی)</h3>
+                </div>
+
+                <!-- CATEGORY 1: PRIMARY SOURCES -->
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تسلط اولیه)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - آموزش صفر</span>
+                            <div class="card-header">
+                                <h4 class="book-title">آموزش شگفت‌انگیز خیلی سبز</h4>
+                                <span class="level-badge level-beginner">🟢 بسیار ضعیف</span>
+                            </div>
+                            <p class="card-desc">مناسب دانش‌آموزانی که در فیزیک شدیداً ضعف دارند. دارای درسنامه‌های کاملاً مفصل، لحن روان و طراحی گرافیکی کاملاً رنگی و تمیز.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> آموزش مفصل از زیر صفر</li>
+                                <li><span>✅</span> تست‌های یادگیری آسان</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 8.9 / 10</span>
+                            <span class="usage-badge">منبع اول (آموزش پایه)</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول اصلی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">فیزیک خیلی سبز / میکرو نق نقره‌ای</h4>
+                                <span class="level-badge level-intermediate">🟡 متوسط / استاندارد</span>
+                            </div>
+                            <p class="card-desc">هر دو کتاب در یک سطح استاندارد و عالی قرار دارند. پوشش جامع تست‌های کنکوری و تالیفی با درسنامه خلاصه‌نویسی شده و کاربردی.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> طبقه‌بندی خوب سوالات</li>
+                                <li><span>✅</span> درسنامه کاربردی و تست کافی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.2 / 10</span>
+                            <span class="usage-badge">منبع اول (استاندارد)</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - تست قوی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع مهر و ماه / نشر الگو</h4>
+                                <span class="level-badge level-advanced">🔴 متوسط رو به بالا</span>
+                            </div>
+                            <p class="card-desc">مناسب دانش‌آموزان متوسط رو به بالا برای منبع اول. دارای تست‌های چالشی و قوی منطبق بر سطح کنکور جدید.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> تست‌های ایده‌دار و قوی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.1 / 10</span>
+                            <span class="usage-badge">منبع اول (سطح قوی)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 2: ADVANCED SOURCES -->
+                <div class="category-divider cat-source2">
+                    <span>🔸 منبع دوم (سطح پیشرفته)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم - پیشنهاد اول</span>
+                            <div class="card-header">
+                                <h4 class="book-title">نردبام خیلی سبز</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته (سطح ۲)</span>
+                            </div>
+                            <p class="card-desc">بهترین گزینه منبع دوم فیزیک با تست‌های سخت، ایده‌دار و چالشی منطبق بر کنکورهای اخیر، مناسب دانش‌آموزانی که درصد بالا می‌خواهند.</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> بهترین بانک تست پیشرفته</li>
+                                <li><span>🔥</span> پاسخنامه کاملاً تحلیلی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.7 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول منبع دوم</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم - چالشی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">آی‌کیو (IQ) جامع فیزیک</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته</span>
+                            </div>
+                            <p class="card-desc">دارای تست‌های دشوار و سطح بالا برای تسلط بیشتر در منبع دوم (نردبام اولویت بالاتری دارد).</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> تست‌های سنگین و ایده‌دار</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.3 / 10</span>
+                            <span class="usage-badge">منبع دوم</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 3: REVIEW & EXAM -->
+                <div class="category-divider cat-review">
+                    <span>🚀 منبع جمع‌بندی و آزمون</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">جمع‌بندی و آزمون</span>
+                            <div class="card-header">
+                                <h4 class="book-title">موج آزمون فیزیک (نشر الگو)</h4>
+                                <span class="level-badge level-advanced">🔴 جمع‌بندی</span>
+                            </div>
+                            <p class="card-desc">بهترین شبیه‌ساز آزمون‌های فیزیک کنکور جهت تنظیم زمان‌بندی و مدیریت آزمون در ایام جمع‌بندی.</p>
+                            <ul class="card-list">
+                                <li><span>🚀</span> آزمون‌های مبحثی و جامع</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.6 / 10</span>
+                            <span class="usage-badge">جمع‌بندی اصلی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= MATHEMATICS ================= -->
+            <div class="subject-group" data-subject="ریاضی تجربی">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>📐</span> ریاضیات (تجربی و ریاضی)</h3>
+                </div>
+
+                <!-- CATEGORY 1: PRIMARY SOURCES -->
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تسلط اولیه)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - مفصل و گام به گام</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع تجربی با طعم گلابی</h4>
+                                <span class="level-badge level-beginner">🟢 ضعیف و پایه</span>
+                            </div>
+                            <p class="card-desc">کتابی کاملاً مفصل با حجم بالا، ایده‌آل برای داوطلبانی که نیاز به آموزش صفر تا صدی مفاهیم پایه ریاضیات دارند.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> بیان روان و بدون پیچیدگی</li>
+                                <li><span>✅</span> آموزش مفاهیم از پیش‌نیازها</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 8.6 / 10</span>
+                            <span class="usage-badge">منبع اول (ضعیف)</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - روان و استاندارد</span>
+                            <div class="card-header">
+                                <h4 class="book-title">ریاضی جامع خیلی سبز</h4>
+                                <span class="level-badge level-intermediate">🟢 پایه تا متوسط</span>
+                            </div>
+                            <p class="card-desc">درسنامه‌های بسیار روان و خودآموز به همراه تست‌های استاندارد کنکوری. عالی برای شروع یادگیری مباحث ریاضی.</p>
+                            <ul class="card-list">
+                                <li><span>🎯</span> درسنامه فوق‌العاده روان</li>
+                                <li><span>🎯</span> تست‌های طبقه‌بندی‌شده عالی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.5 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول (منبع اول)</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - قوی و با پیش‌نیاز</span>
+                            <div class="card-header">
+                                <h4 class="book-title">ریاضی جامع مهر و ماه</h4>
+                                <span class="level-badge level-intermediate">🟡 متوسط به بالا</span>
+                            </div>
+                            <p class="card-desc">دارای درسنامه قوی، بخش پیش‌نیازهای عالی و تست‌های به مراتب چالشی‌تر از خیلی سبز. عالی برای دانش‌آموزانی که پایه متوسطی دارند.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> پوشش جامع پیش‌نیازها</li>
+                                <li><span>✅</span> تست‌های چالشی و قوی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.6 / 10</span>
+                            <span class="usage-badge">منبع اول (قوی)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 2: ADVANCED SOURCES -->
+                <div class="category-divider cat-source2">
+                    <span>🔸 منبع دوم (سطح پیشرفته)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم - پیشنهاد اول</span>
+                            <div class="card-header">
+                                <h4 class="book-title">ریاضیات جامع آی‌کیو (IQ)</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته (سطح ۲)</span>
+                            </div>
+                            <p class="card-desc">بهترین منبع دوم برای ریاضی تجربی. شامل سوالات بسیار چالشی، نوآورانه و ایده‌دار جهت کسب درصدهای بالای ۷۰ در کنکور.</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> ایده‌های نو و تست‌های سنگین</li>
+                                <li><span>🔥</span> پاسخنامه فوق‌العاده تحلیلی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.9 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول منبع دوم</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم - تستی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">نردبام خیلی سبز</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته</span>
+                            </div>
+                            <p class="card-desc">تست‌های سطح بالا برای دانش‌آموزانی که منبع اول را تمام کرده‌اند (آی‌کیو در اولویت بالاتر است).</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> تست‌های دشوار و استاندارد</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.2 / 10</span>
+                            <span class="usage-badge">منبع دوم</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 3: REVIEW & EXAM -->
+                <div class="category-divider cat-review">
+                    <span>🚀 منبع جمع‌بندی و آزمون</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">جمع‌بندی و آزمون</span>
+                            <div class="card-header">
+                                <h4 class="book-title">موج آزمون / ۱۰۰ آزمون مهر و ماه</h4>
+                                <span class="level-badge level-advanced">🔴 جمع‌بندی</span>
+                            </div>
+                            <p class="card-desc">بهترین منابع آزمون‌محور ریاضی جهت مرور مباحث و بالا بردن سرعت عمل در حل مسائل کنکوری.</p>
+                            <ul class="card-list">
+                                <li><span>🚀</span> آزمون‌های جامع شبیه‌ساز</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.7 / 10</span>
+                            <span class="usage-badge">جمع‌بندی اصلی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= CHEMISTRY ================= -->
+            <div class="subject-group" data-subject="شیمی">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>🧪</span> شیمی (تجربی و ریاضی)</h3>
+                </div>
+
+                <!-- CATEGORY 1: PRIMARY SOURCES -->
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تسلط اولیه)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - مفهومی و عمیق</span>
+                            <div class="card-header">
+                                <h4 class="book-title">مبتکران (تک‌جلدی)</h4>
+                                <span class="level-badge level-beginner">🟢 پایه تا متوسط</span>
+                            </div>
+                            <p class="card-desc">درسنامه‌های بی‌نظیر، صمیمی و مفهومی استاد بازرگان. بهترین منبع برای یادگیری عمیق مفاهیم شیمی از پایه.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> بهترین درسنامه شیمی در بازار</li>
+                                <li><span>✅</span> کارشناسی دقیق تست‌ها</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.6 / 10</span>
+                            <span class="usage-badge">منبع اول (مفهومی)</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - بهینه‌تر و به‌روز</span>
+                            <div class="card-header">
+                                <h4 class="book-title">شیمی جامع یا تک‌پایه خیلی سبز</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">کتابی با حجم کاملاً مناسب، صرفه‌جویی در زمان داوطلب و تست‌های به مراتب به‌روزتر در سبک کنکورهای اخیر نسبت به مبتکران.</p>
+                            <ul class="card-list">
+                                <li><span>🎯</span> حجم بهینه و زمان‌بندی مناسب</li>
+                                <li><span>🎯</span> تست‌های منطبق بر کنکور جدید</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.4 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول (منبع اول)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 2: ADVANCED & TOPICAL SOURCES -->
+                <div class="category-divider cat-source2">
+                    <span>🔸 منبع دوم و کتب مبحثی (مسائل)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم - پیشنهاد اول</span>
+                            <div class="card-header">
+                                <h4 class="book-title">آی‌کیو (IQ) جامع / میکرو جامع</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته (سطح ۲)</span>
+                            </div>
+                            <p class="card-desc">بهترین منبع سطح دوم شیمی با تست‌های سنگین، مفهومی و ترکیبی از تمامی مقاطع کنکور.</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> تست‌های سطح بالایی کنکوری</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.7 / 10</span>
+                            <span class="usage-badge">منبع دوم پیشرفته</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">مبحثی - تقویت مسائل</span>
+                            <div class="card-header">
+                                <h4 class="book-title">مسائل شیمی نشر الگو / خیلی سبز</h4>
+                                <span class="level-badge level-intermediate">🟡 متوسط و پیشرفته</span>
+                            </div>
+                            <p class="card-desc">کتاب‌های مبحثی تخصصی برای تسلط بر تکنیک‌ها و استوکیومتری مسائل شیمی، مناسب برای تقویت قدرت محاسباتی.</p>
+                            <ul class="card-list">
+                                <li><span>🧮</span> روش‌ها و راهبردهای حل سریع</li>
+                                <li><span>🧮</span> بانک تست جامع مسائل</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.3 / 10</span>
+                            <span class="usage-badge">مبحثی مسائل</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 3: REVIEW & EXAM -->
+                <div class="category-divider cat-review">
+                    <span>🚀 منبع جمع‌بندی و آزمون</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">جمع‌بندی و آزمون</span>
+                            <div class="card-header">
+                                <h4 class="book-title">فصل آزمون / موج آزمون شیمی</h4>
+                                <span class="level-badge level-advanced">🔴 جمع‌بندی</span>
+                            </div>
+                            <p class="card-desc">بهترین منابع آزمونی برای ایام پایانی و جمع‌بندی مباحث شیمی با آزمون‌های استاندارد و جامع.</p>
+                            <ul class="card-list">
+                                <li><span>🚀</span> شبیه‌ساز کامل شرایط کنکور</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.6 / 10</span>
+                            <span class="usage-badge">جمع‌بندی اصلی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= HESABAN & MATH (MATH STREAM) ================= -->
+            <div class="subject-group" data-subject="حسابان (ریاضی)">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>✏️</span> حسابان و ریاضی پایه (ریاضی ۱، حسابان ۱ و ۲)</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تسلط اولیه)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول اصلی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع خیلی سبز (حسابان و ریاضی پایه)</h4>
+                                <span class="level-badge level-intermediate">🟢 پایه تا متوسط</span>
+                            </div>
+                            <p class="card-desc">پوشش کامل ریاضی ۱، حسابان ۱ و حسابان ۲. درسنامه‌های کاملاً منسجم، روان و آموزش‌محور به همراه بانک تست طبقه‌بندی‌شده و استاندارد کنکور ریاضی.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> پوشش کامل هر سه پایه در یک کتاب</li>
+                                <li><span>✅</span> درسنامه روان و تست‌های فوق‌العاده کاربردی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.5 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول (منبع اول)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-source2">
+                    <span>🔸 منبع دوم (سطح پیشرفته و چالش)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم - پیشنهاد اول</span>
+                            <div class="card-header">
+                                <h4 class="book-title">حسابان جامع آی‌کیو (IQ) گاج</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته (سطح ۲)</span>
+                            </div>
+                            <p class="card-desc">بهترین منبع سطح دوم برای حسابان رشته ریاضی. شامل تست‌های بسیار چالشی، نوآورانه و ایده‌دار جهت کسب درصد بالای ۷۰ در کنکور ریاضی.</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> بانک تست چالشی و بسیار سنگین</li>
+                                <li><span>🔥</span> پاسخنامه تحلیلی غنی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.8 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول منبع دوم</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم - تستی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">نردبام حسابان و ریاضی خیلی سبز</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته</span>
+                            </div>
+                            <p class="card-desc">تست‌های سطح بالا و ایده‌دار برای تثبیت مطالب حسابان پس از اتمام منبع اول.</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> سوالات سخت و ایده‌دار</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.3 / 10</span>
+                            <span class="usage-badge">منبع دوم پیشرفته</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-review">
+                    <span>🚀 منبع جمع‌بندی و آزمون</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">جمع‌بندی و آزمون</span>
+                            <div class="card-header">
+                                <h4 class="book-title">موج آزمون حسابان و ریاضی پایه (نشر الگو)</h4>
+                                <span class="level-badge level-advanced">🔴 جمع‌بندی</span>
+                            </div>
+                            <p class="card-desc">بهترین شبیه‌ساز آزمون‌های حسابان رشته ریاضی برای تنظیم زمان و مرور سریع در دوران جمع‌بندی.</p>
+                            <ul class="card-list">
+                                <li><span>🚀</span> آزمون‌های مبحثی و جامع زمان‌دار</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.6 / 10</span>
+                            <span class="usage-badge">جمع‌بندی اصلی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= GEOMETRY (MATH STREAM) ================= -->
+            <div class="subject-group" data-subject="هندسه (ریاضی)">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>📐</span> هندسه (پایه و دوازدهم)</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تسلط اولیه)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - هندسه پایه</span>
+                            <div class="card-header">
+                                <h4 class="book-title">هندسه پایه خیلی سبز (دهم و یازدهم)</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">درسنامه‌های کاملاً آموزشی و گام به گام جهت یادگیری قضایا و اثبات‌های هندسه دهم و یازدهم همراه با تست‌های استاندارد.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> آموزش کاملاً روان قضایا</li>
+                                <li><span>✅</span> تست‌های استاندارد و طبقه‌بندی‌شده</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.4 / 10</span>
+                            <span class="usage-badge">بهترین هندسه پایه</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - هندسه دوازدهم</span>
+                            <div class="card-header">
+                                <h4 class="book-title">هندسه دوازدهم میکرو نقره‌ای گاج</h4>
+                                <span class="level-badge level-intermediate">🟡 متوسط رو به بالا</span>
+                            </div>
+                            <p class="card-desc">عملکرد فوق‌العاده و بی‌نظیر در هندسه دوازدهم؛ دارای درسنامه قوی، بانک تست بسیار غنی و پاسخنامه کاملاً تشریحی.</p>
+                            <ul class="card-list">
+                                <li><span>🌟</span> بهترین و کامل‌ترین کتاب هندسه دوازدهم</li>
+                                <li><span>🌟</span> پاسخنامه کاملاً تحلیلی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.7 / 10</span>
+                            <span class="usage-badge">بهترین هندسه دوازدهم</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - هندسه پایه</span>
+                            <div class="card-header">
+                                <h4 class="book-title">هندسه پایه میکرو نقره‌ای گاج</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">کتابی بسیار خوب و استاندارد برای هندسه دهم و یازدهم (در کنار هندسه پایه خیلی سبز گزینه متناسبی است).</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> تست‌های طبقه‌بندی عالی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.1 / 10</span>
+                            <span class="usage-badge">منبع اول خوب</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-review">
+                    <span>🚀 منبع دوم و جمع‌بندی</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">جمع‌بندی و سطح ۲</span>
+                            <div class="card-header">
+                                <h4 class="book-title">موج آزمون هندسه (نشر الگو)</h4>
+                                <span class="level-badge level-advanced">🔴 سطح ۲ و جمع‌بندی</span>
+                            </div>
+                            <p class="card-desc">آزمون‌های جامع برای تسلط بر رسم‌ها و ایده‌های خلاقانه سوالات هندسه کنکور ریاضی.</p>
+                            <ul class="card-list">
+                                <li><span>🚀</span> شبیه‌ساز واقعی سوالات هندسه کنکور</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.5 / 10</span>
+                            <span class="usage-badge">سطح ۲ و جمع‌بندی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DISCRETE MATH & PROBABILITY ================= -->
+            <div class="subject-group" data-subject="گسسته و آمار">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>🎲</span> گسسته و آمار و احتمال</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تسلط اولیه)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - انتخاب برتر</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع گسسته و آمار خیلی سبز</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">کامل‌ترین و منسجم‌ترین کتاب برای آمار و احتمال یازدهم و گسسته دوازدهم. ارائه درسنامه‌های مفهومی، بیان آسان ایده‌های نظریه اعداد و ترکیبیات به همراه تست‌های کاملاً دقیق.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> پوشش جامع آمار و احتمال + گسسته</li>
+                                <li><span>✅</span> بیانی بسیار روان و آموزنده</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.6 / 10</span>
+                            <span class="usage-badge">بهترین منبع اول</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - تستی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">گسسته و آمار جامع نشر الگو / خوشخوان</h4>
+                                <span class="level-badge level-intermediate">🟡 متوسط رو به بالا</span>
+                            </div>
+                            <p class="card-desc">دارای تست‌های قوی و تحلیلی مناسب دانش‌آموزانی که پایه ریاضی خوبی دارند و تست‌های چالشی‌تر می‌خواهند.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> تست‌های چالشی نظریه اعداد و گراف</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.2 / 10</span>
+                            <span class="usage-badge">منبع اول تستی</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-review">
+                    <span>🚀 منبع دوم و جمع‌بندی</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">جمع‌بندی و سطح ۲</span>
+                            <div class="card-header">
+                                <h4 class="book-title">موج آزمون گسسته و آمار (نشر الگو)</h4>
+                                <span class="level-badge level-advanced">🔴 جمع‌بندی و سطح ۲</span>
+                            </div>
+                            <p class="card-desc">بهترین منبع آزمونی جهت تسلط بر تکنیک‌های حل سریع سوالات گسسته و آمار و احتمال در ایام پایانی.</p>
+                            <ul class="card-list">
+                                <li><span>🚀</span> آزمون‌های زمان‌دار و جامع شبیه‌ساز</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.5 / 10</span>
+                            <span class="usage-badge">جمع‌بندی و سطح ۲</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= HUMANITIES ================= -->
+            <div class="subject-group" data-subject="ریاضی انسانی">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>📊</span> ریاضی و آمار انسانی</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تست)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - بهترین گزینه</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع مهر و ماه</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">بهترین کتاب ریاضی انسانی در بازار! درسنامه عالی، گرافیک بسیار شکیل، بخش‌های «دست‌گرمی» و «یک راز مهم» و آزمون‌های فصلی.</p>
+                            <ul class="card-list">
+                                <li><span>🌟</span> جذابیت ظاهری و گرافیک شاداب</li>
+                                <li><span>🌟</span> پاسخنامه کاملاً تشریحی و گام‌به‌گام</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.8 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول منبع اول</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - استاندارد</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع کنکور مشاوران</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">درسنامه و تست‌های مناسب همراه با بخش‌های کاربردی «آزمونک» و «راه و عمل» که کتاب را از حالت خستگی و خشکی خارج کرده است.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> بخش‌های تمرینی آزمونک</li>
+                                <li><span>✅</span> طبقه‌بندی استاندارد تست‌ها</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.1 / 10</span>
+                            <span class="usage-badge">منبع اول خوب</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-source2">
+                    <span>🔸 منبع دوم و جمع‌بندی</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم / جمع‌بندی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">تیزشیم / هایلایت مهر و ماه</h4>
+                                <span class="level-badge level-advanced">🔴 سطح ۲ و مرور</span>
+                            </div>
+                            <p class="card-desc">تیزشیم برای تست‌های پیشرفته و چالشی؛ و کتاب‌های هایلایت برای مرور سریع فرمول‌ها در دوران جمع‌بندی.</p>
+                            <ul class="card-list">
+                                <li><span>🚀</span> مناسب دستیابی به درصد بالای ۷۰</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.4 / 10</span>
+                            <span class="usage-badge">سطح ۲ و جمع‌بندی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-group" data-subject="اقتصاد">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>💰</span> اقتصاد کنکور انسانی</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تست)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - انتخاب شماره یک</span>
+                            <div class="card-header">
+                                <h4 class="book-title">اقتصاد جامع مهر و ماه</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">بهترین منبع اقتصاد! آوردن متن کامل کتاب درسی در کنار نکات کنکوری، گرافیک شکیل، تست‌های دقیق و پاسخنامه تشریحی غنی.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> پوشش متن کتاب درسی + نکته</li>
+                                <li><span>✅</span> تست‌های طبقه‌بندی عالی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.7 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول اصلی</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - درسنامه روان</span>
+                            <div class="card-header">
+                                <h4 class="book-title">اقتصاد جامع خیلی سبز</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">درسنامه‌های بسیار روان و صمیمی، پاسخنامه کامل و ارائه نکات ریز یادگیری.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> لحن روان و نکات کلیدی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.3 / 10</span>
+                            <span class="usage-badge">منبع اول خوب</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-source2">
+                    <span>🔸 مکمل مسائل و جمع‌بندی</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">مبحثی - تقویت مسائل</span>
+                            <div class="card-header">
+                                <h4 class="book-title">مسائل اقتصاد مشاوران</h4>
+                                <span class="level-badge level-beginner">🟢 رفع ضعف مسائل</span>
+                            </div>
+                            <p class="card-desc">کتابی فوق‌العاده برای داوطلبانی که در بخش مسائل ریاضی اقتصاد ضعف دارند. بررسی انواع فرمول‌ها و راهبردهای حل مسئله.</p>
+                            <ul class="card-list">
+                                <li><span>🧮</span> آموزش راه‌حل تیپ‌های مختلف مسئله</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.3 / 10</span>
+                            <span class="usage-badge">مبحثی (رفع ضعف)</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">منبع دوم / مرور</span>
+                            <div class="card-header">
+                                <h4 class="book-title">تیزشیم / هایلایت اقتصاد</h4>
+                                <span class="level-badge level-advanced">🔴 سطح ۲ و مرور</span>
+                            </div>
+                            <p class="card-desc">تیزشیم به عنوان منبع سطح دوم و هایلایت جهت جمع‌بندی و مرور سریع نکات قبل آزمون‌ها.</p>
+                            <ul class="card-list">
+                                <li><span>🚀</span> تست‌های پیشرفته اقتصاد</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.2 / 10</span>
+                            <span class="usage-badge">جمع‌بندی و سطح ۲</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-group" data-subject="جامعه‌شناسی">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>🏛️</span> جامعه‌شناسی</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تست)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - بهترین کتاب</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع مهر و ماه (۲ جلدی)</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">آوردن کامل متن کتاب درسی در کنار نکات تستی؛ که نیاز دانش‌آموز به همراه داشتن همزمان کتاب درسی را به طور کامل رفع می‌کند.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> متن کتاب درسی + نکات تحلیلی</li>
+                                <li><span>✅</span> تست‌های گام‌به‌گام از ساده به سخت</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.7 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول مشاوره</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - جدول و نمودار</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع خیلی سبز</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">درسنامه بسیار روان با ادبیات صمیمی، استفاده عالی از جدول‌ها و نمودارها جهت دسته‌بندی موضوعات جامعه‌شناسی.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> نمودارها و جداول خلاصه‌ساز</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.3 / 10</span>
+                            <span class="usage-badge">منبع اول اصلی</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-review">
+                    <span>🚀 منبع دوم و جمع‌بندی</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">جمع‌بندی / سطح دو</span>
+                            <div class="card-header">
+                                <h4 class="book-title">تیزشیم / هایلایت جامعه‌شناسی</h4>
+                                <span class="level-badge level-advanced">🔴 سطح ۲ و جمع‌بندی</span>
+                            </div>
+                            <p class="card-desc">کتاب‌های تیزشیم برای آزمون‌های سطح بالا و کتاب‌های هایلایت برای مرور سریع مطالب حفظی جامعه‌شناسی.</p>
+                            <ul class="card-list">
+                                <li><span>🚀</span> آزمون‌های سنجشی جامع</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.3 / 10</span>
+                            <span class="usage-badge">جمع‌بندی و سطح ۲</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-group" data-subject="تاریخ و جغرافیا">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>📜</span> تاریخ و جغرافیا</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تسلط)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - انتخاب برتر</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع مهر و ماه (تاریخ و جغرافیا)</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">استفاده بی‌نظیر از نقشه، تصاویر، فلش‌کارت‌های منسجم و آوردن متن کتاب درسی. بهترین گزینه برای تسلط بر مباحث حفظی.</p>
+                            <ul class="card-list">
+                                <li><span>🖼️</span> تصویرسازی و فلش‌کارت‌های عالی</li>
+                                <li><span>🖼️</span> انسجام فوق‌العاده مطالب</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.6 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول مشاوره</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - جدول‌بندی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">تاریخ جامع خیلی سبز</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">دسته‌بندی منظم مطالب در قالب جداول کاربردی به همراه تست‌های استاندارد.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> خلاصه مطالب در جدول</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.1 / 10</span>
+                            <span class="usage-badge">منبع اول خوب</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-review">
+                    <span>🚀 مرور سریع و سطح دوم</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">مرور همراه / سطح دوم</span>
+                            <div class="card-header">
+                                <h4 class="book-title">لقمه مهر و ماه / تیزشیم</h4>
+                                <span class="level-badge level-intermediate">🟢 مرور و آزمون</span>
+                            </div>
+                            <p class="card-desc">لقمه مهر و ماه دارای گرافیک جذاب برای مرور همراه، و تیزشیم برای آزمون‌های سطح دوم تاریخ و جغرافیا.</p>
+                            <ul class="card-list">
+                                <li><span>📱</span> مرور سریع نکات در مسیر و رفت‌وآمد</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.4 / 10</span>
+                            <span class="usage-badge">مرور و جمع‌بندی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-group" data-subject="فلسفه و منطق">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>🧠</span> فلسفه و منطق</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش مفهومی و تست)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - بهترین تحلیل</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع مهر و ماه (۲ جلدی)</h4>
+                                <span class="level-badge level-advanced">🔴 متوسط به بالا</span>
+                            </div>
+                            <p class="card-desc">درسنامه‌های تحلیلی فوق‌العاده عمیق، تست‌های مرحله‌بندی‌شده از «شروع کسب مهارت» تا «انفجار» و پاسخنامه‌های بسیار غنی.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> تحلیل مفهومی متن فلسفه</li>
+                                <li><span>✅</span> تست‌های مرحله‌ای عالی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.7 / 10</span>
+                            <span class="usage-badge">بهترین منبع مفهومی</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - روان</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع مشاوران یا خیلی سبز</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">هر دو کتاب دارای درسنامه‌های روان، نکات تستی غنی و تست‌های استاندارد طبقه‌بندی‌شده منطبق بر سطح سوالات کنکوری هستند.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> درسنامه روان و تست فراوان</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.2 / 10</span>
+                            <span class="usage-badge">منبع اول اصلی</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-source2">
+                    <span>🔸 منبع دوم و جمع‌بندی</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم / آزمونی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">تیزشیم فلسفه و منطق</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته</span>
+                            </div>
+                            <p class="card-desc">تست‌های سنگین، مفهومی و آزمون‌های سنجشی برای تسلط کامل دانش‌آموزان در منبع دوم.</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> آزمون‌های سنگین فلسفه</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.5 / 10</span>
+                            <span class="usage-badge">سطح دوم و جمع‌بندی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-group" data-subject="روانشناسی">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>🧘‍♂️</span> روانشناسی</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تست)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - پیشنهاد برتر</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع مهر و ماه</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">دارای بهترین درسنامه در میان کتب روانشناسی همراه با فلش‌کارت‌های مرور، تست‌های کامل و پاسخنامه تشریحی عالی.</p>
+                            <ul class="card-list">
+                                <li><span>🌟</span> فلش‌کارت‌های مرور همراه</li>
+                                <li><span>🌟</span> پوشش کامل متن کتاب</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.6 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول مشاوره</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - بانک تست</span>
+                            <div class="card-header">
+                                <h4 class="book-title">روانشناسی مشاوران</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">تعداد تست‌های بسیار بالا، درسنامه مناسب و آوردن مطالب تکمیلی که دانش‌آموز را برای تست‌های سخت آماده می‌کند.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> بانک تست پرحجم و غنی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.3 / 10</span>
+                            <span class="usage-badge">منبع اول تستی</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - رنگی و مصور</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع میکرو گاج</h4>
+                                <span class="level-badge level-beginner">🟢 آموزش پایه</span>
+                            </div>
+                            <p class="card-desc">کتاب رنگی با درسنامه خوب برای یادگیری مفاهیم روانشناسی.</p>
+                            <ul class="card-list">
+                                <li><span>🎨</span> ظاهر جذاب و روان</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 8.8 / 10</span>
+                            <span class="usage-badge">آموزش اولیه</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-review">
+                    <span>🚀 مرور سریع و سطح ۲</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">مرور همراه / سطح ۲</span>
+                            <div class="card-header">
+                                <h4 class="book-title">کتابچه مهر و ماه / تیزشیم</h4>
+                                <span class="level-badge level-intermediate">🟢 مرور سریع</span>
+                            </div>
+                            <p class="card-desc">کتابچه‌های مهر و ماه بسیار جمع‌وجور جهت مرور سریع در بیرون از منزل؛ و تیزشیم برای آزمون‌های سطح دوم.</p>
+                            <ul class="card-list">
+                                <li><span>📱</span> خلاصه و همراه</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.2 / 10</span>
+                            <span class="usage-badge">مرور و جمع‌بندی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-group" data-subject="علوم و فنون">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>📚</span> علوم و فنون ادبی</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش جامع)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - انتخاب اول</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع خیلی سبز</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">مثال‌های فراوان، پوشش انواع سوالات کنکوری، درسنامه‌های منظم دسته‌بندی‌شده و پاسخنامه تشریحی بسیار دقیق.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> پوشش کامل تمامی مباحث</li>
+                                <li><span>✅</span> مثال‌های توضیحی بی‌نظیر</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.5 / 10</span>
+                            <span class="usage-badge">پیشنهاد اول مشاوره</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - دسته بندی خوب</span>
+                            <div class="card-header">
+                                <h4 class="book-title">جامع مشاوران</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">درسنامه جمع‌وجور و کامل، دسته‌بندی عالی برای حفظیات و تست‌های طبقه‌بندی شده.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> دسته‌بندی عالی مطالب حفظی</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.2 / 10</span>
+                            <span class="usage-badge">منبع اول خوب</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-source2">
+                    <span>🔸 منابع مبحثی و جمع‌بندی</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">مبحثی - عروض و قافیه</span>
+                            <div class="card-header">
+                                <h4 class="book-title">عروض و قافیه مشاوران</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">بهترین منبع مبحثی برای تقطیع هجایی و تسلط بر وزن‌های شعر، همراه با مثال‌های پرشمار و پاسخنامه گام‌به‌گام.</p>
+                            <ul class="card-list">
+                                <li><span>🎼</span> آموزش گام‌به‌گام وزن شعر</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.7 / 10</span>
+                            <span class="usage-badge">بهترین کتاب عروض</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-review">مبحثی آرایه / جمع‌بندی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">لقمه آرایه مهر و ماه / تیزشیم</h4>
+                                <span class="level-badge level-advanced">🔴 سطح ۲ و مرور</span>
+                            </div>
+                            <p class="card-desc">لقمه مهر و ماه برای توضیحات آرایه‌ها و تیزشیم علوم و فنون برای آزمون‌های سطح دوم.</p>
+                            <ul class="card-list">
+                                <li><span>🎨</span> مرور آرایه‌ها و آزمون جامع</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.3 / 10</span>
+                            <span class="usage-badge">مبحثی و جمع‌بندی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-group" data-subject="عربی تخصصی">
+                <div class="lesson-header">
+                    <h3 class="lesson-title"><span>🌙</span> عربی تخصصی انسانی</h3>
+                </div>
+
+                <div class="category-divider">
+                    <span>🔹 منبع اول (آموزش و تست)</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - انتخاب هوشمندانه</span>
+                            <div class="card-header">
+                                <h4 class="book-title">عربی جامع خیلی سبز</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">کامل‌ترین منبع عربی انسانی شامل: واژگان کامل، مترادف/متضاد، فنون ترجمه هر مبحث، قواعد روان و تست‌های به اندازه و کارشناسی‌شده.</p>
+                            <ul class="card-list">
+                                <li><span>✅</span> لغت‌نامه و فنون ترجمه کامل</li>
+                                <li><span>✅</span> تست‌های کاملاً دقیق کنکوری</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.8 / 10</span>
+                            <span class="usage-badge">بهترین منبع عربی</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag">منبع اول - جذاب و آزمونی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">عربی عمار</h4>
+                                <span class="level-badge level-intermediate">🟡 تمام سطوح</span>
+                            </div>
+                            <p class="card-desc">طراحی گرافیکی کاملاً رنگی و شکیل، درسنامه‌های کارآمد و تست‌های طبقه بندی شده همراه با آزمون‌های سخت فصل به فصل.</p>
+                            <ul class="card-list">
+                                <li><span>🎨</span> ظاهر جذاب و درسنامه ساده</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.2 / 10</span>
+                            <span class="usage-badge">منبع اول بسیار خوب</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-divider cat-source2">
+                    <span>🔸 منبع دوم و جمع‌بندی</span>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="subject-tag tag-source2">منبع دوم / جمع‌بندی</span>
+                            <div class="card-header">
+                                <h4 class="book-title">تیزشیم عربی تخصصی</h4>
+                                <span class="level-badge level-advanced">🔴 سطح پیشرفته</span>
+                            </div>
+                            <p class="card-desc">کتابی عالی برای دانش‌آموزان قوی جهت آزمون‌های مبحثی و جامع جمع‌بندی عربی.</p>
+                            <ul class="card-list">
+                                <li><span>🔥</span> آزمون‌های چالشی سطح بالا</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="rating">⭐ 9.5 / 10</span>
+                            <span class="usage-badge">سطح ۲ و جمع‌بندی</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Counselor Golden Advice Box -->
+        <div class="advice-box">
+            <div class="advice-icon">💡</div>
+            <div>
+                <strong style="color: var(--brand-green); font-size: 1.15rem; display: block; margin-bottom: 6px;">توصیه طلایی استاد میرنژاد:</strong>
+                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.8;">
+                    «موفقیت در کنکور حاصل داشتن کتاب‌های متعدد نیست، بلکه حاصل <strong>تکرار، تست‌زنی مداوم و تحلیل دقیق یک کتاب استاندارد</strong> است. اول منبع اول خود را کامل تمام کنید و پس از رسیدن به درصد بالا، سراغ منبع دوم و آزمونی بروید.»
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <section style="margin-top: 50px;">
+            <div class="lesson-header">
+                <h3 class="lesson-title"><span>❓</span> سوالات متداول شما</h3>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">آیا حتماً باید آخرین چاپ کتاب‌ها را تهیه کنم؟ <span>▼</span></div>
+                <div class="faq-answer">خیر! تغییرات کتاب‌ها سالانه تنها ۴ تا ۵ درصد است. اگر چاپ‌های ۱۴۰۱ به بعد را دارید، می‌توانید همان‌ها را استفاده کنید.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">اگر کتاب من با لیست شما متفاوت است آن را تعویض کنم؟ <span>▼</span></div>
+                <div class="faq-answer">به هیچ عنوان! بیش از ۷۰ تا ۸۰ درصد محتوای تمام کتب کنکور یکسان است. اگر با کتاب فعلی خود پیش می‌روید، آن را تعویض نکنید.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">چه زمانی باید سراغ منابع سطح دوم (مثل IQ یا نردبام) بروم؟ <span>▼</span></div>
+                <div class="faq-answer">زمانی که منبع اول خود را حداقل یک‌بار کاملاً مطالعه نموده، تست‌های آن را تحلیل کرده و در آزمون‌ها به درصد پایدار بالای ۶۰ رسیده باشید.</div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <p style="font-size: 1.1rem; font-weight: 800; color: var(--text-main); margin-bottom: 8px;">
+                کانال رسمی مشاوره تحصیلی استاد میرنژاد
+            </p>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+                جهت دریافت برنامه‌ریزی، تحلیل آزمون‌ها و پادکست‌های انگیزشی به کانال ما در ایتا بپیوندید:
+            </p>
+            
+            <a href="https://eitaa.com/moshaverhbartar" target="_blank" class="eitaa-btn">
+                <span>📢</span>
+                <span>پیوستن به کانال ایتا (moshaverhbartar@)</span>
+            </a>
+
+            <div class="footer-credits">
+                تهیه شده در گروه آموزشی تیک 🎯
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop">▲</button>
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+
+            // Back to top button visibility
+            let backBtn = document.getElementById("backToTop");
+            if (winScroll > 350) {
+                backBtn.classList.add("visible");
+            } else {
+                backBtn.classList.remove("visible");
+            }
+        };
+
+        // Scroll to Top
+        document.getElementById("backToTop").addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Theme Toggle Functionality
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+            }
+        });
+
+        // STEP-1: Subject Filtering Logic
+        const subjectBtns = document.querySelectorAll('.subject-btn');
+        const subjectGroups = document.querySelectorAll('.subject-group');
+        const searchInput = document.getElementById('searchInput');
+
+        subjectBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                subjectBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const selectedSubject = btn.getAttribute('data-subject');
+
+                subjectGroups.forEach(group => {
+                    const groupSubject = group.getAttribute('data-subject');
+                    if (selectedSubject === 'all' || groupSubject === selectedSubject) {
+                        group.style.display = 'block';
+                    } else {
+                        group.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search Input Filtering
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.card');
+
+            if (searchTerm !== '') {
+                subjectGroups.forEach(g => g.style.display = 'block');
+            }
+
+            cards.forEach(card => {
+                const title = card.querySelector('.book-title').textContent.toLowerCase();
+                const tag = card.querySelector('.subject-tag').textContent.toLowerCase();
+                const desc = card.querySelector('.card-desc').textContent.toLowerCase();
+
+                if (title.includes(searchTerm) || tag.includes(searchTerm) || desc.includes(searchTerm)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Accordion FAQ
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(q => {
+            q.addEventListener('click', () => {
+                const answer = q.nextElementSibling;
+                const isVisible = answer.style.display === 'block';
+                
+                document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+
+                if (!isVisible) {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
